@@ -1,0 +1,18 @@
+# Web framework
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+pydantic>=2.5
+
+# SATARK NETRA engine. scikit-learn / joblib / numpy are PINNED because message_model_v3.pkl was saved with them.
+# If pip cannot install these exact versions, run:  cd satark_core && python train_message_model.py   (needs pandas) to re-create the .pkl
+scikit-learn==1.9.1
+joblib==1.6.0
+numpy==2.5.4
+beautifulsoup4==4.15.0
+lxml==6.1.3
+networkx==3.7
+reportlab==5.0.1
+requests>=2.31
+pandas            # only for retraining the model
+tldextract        # optional: more accurate domain parsing

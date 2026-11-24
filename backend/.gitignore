@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+scamshield.db
+node_modules/
+frontend/dist/
